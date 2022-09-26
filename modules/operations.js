@@ -1,6 +1,5 @@
 // Handle the operations required on a book
 import { listBooks } from './variables.js';
-import { updateBtns } from '../index.js';
 
 export class BookHandling {
   constructor(cBooks) {
@@ -14,7 +13,7 @@ export class BookHandling {
       this.bookCount = e.id;
       this.add(e.title, e.author);
     });
-    updateBtns();
+    this.updateBtns();
   }
 
   removeBooks(btn) {
@@ -34,6 +33,12 @@ export class BookHandling {
     div.className = 'tag';
     div.append(p, btn);
     listBooks.appendChild(div);
+  }
+
+  updateBtns() {
+    listBooks.querySelectorAll('button').forEach((element) => {
+      element.addEventListener('click', () => books.removeBooks(element));
+    });
   }
 
   setBookCount() {

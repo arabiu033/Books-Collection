@@ -14,9 +14,9 @@ export const date = document.querySelector('.add-date');
 let books;
 
 if (localStorage.getItem('collectionOfBooks')) {
-  const books = new BookHandling(JSON.parse(localStorage.getItem('collectionOfBooks') || '[]'));
+  books = new BookHandling(JSON.parse(localStorage.getItem('collectionOfBooks') || '[]'));
 } else {
-  const books = new BookHandling([]);
+  books = new BookHandling([]);
 }
 
 export { books };
