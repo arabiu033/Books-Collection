@@ -1,6 +1,6 @@
 // Handle the opeartion of changing the interface of the page base on the user action
-import { 
-  list, add, contact, sectionOne, sectionTwo, sectionThree 
+import {
+  list, add, contact, sectionOne, sectionTwo, sectionThree,
 } from './variables.js';
 
 list.addEventListener('click', () => {

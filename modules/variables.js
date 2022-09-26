@@ -1,4 +1,4 @@
-import { BookHandling } from "./operations.js";
+import { BookHandling } from './operations.js';
 
 export const bookTitle = document.getElementById('book-title');
 export const bookAuthor = document.getElementById('book-author');
@@ -14,9 +14,9 @@ export const date = document.querySelector('.add-date');
 let books;
 
 if (localStorage.getItem('collectionOfBooks')) {
-  books = new BookHandling(JSON.parse(localStorage.getItem('collectionOfBooks') || '[]'));
+  const books = new BookHandling(JSON.parse(localStorage.getItem('collectionOfBooks') || '[]'));
 } else {
-  books = new BookHandling([]);
+  const books = new BookHandling([]);
 }
 
-export {books};
+export { books };
