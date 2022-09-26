@@ -1,4 +1,7 @@
 // Handle the operations required on a book
+import { listBooks } from './variables.js';
+import { updateBtns } from '../index.js';
+
 export class BookHandling {
   constructor(cBooks) {
     this.cBooks = cBooks;

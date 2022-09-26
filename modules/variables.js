@@ -10,6 +10,7 @@ export const contact = document.getElementById('contact-me');
 export const sectionOne = document.getElementById('action-1');
 export const sectionTwo = document.getElementById('action-2');
 export const sectionThree = document.getElementById('action-3');
+export const date = document.querySelector('.add-date');
 let books;
 
 if (localStorage.getItem('collectionOfBooks')) {

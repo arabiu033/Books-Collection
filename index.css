@@ -67,6 +67,13 @@ footer {
   gap: 1.5rem;
 }
 
+.add-date {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  margin-right: 1.8%;
+  color: rgba(128, 128, 128, 0.9);
+}
+
 .books h2 {
   text-align: center;
   font-size: 3rem;
