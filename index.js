@@ -1,8 +1,10 @@
-import { listBooks, books, bookAuthor, bookTitle, addBtn } from "./modules/variables.js";
-import './modules/interface.js'
-import './modules/date.js'
+import {
+  listBooks, books, bookAuthor, bookTitle, addBtn 
+} from './modules/variables.js';
+import './modules/interface.js';
+import './modules/date.js';
 
-export function updateBtns() {
+export default function updateBtns() {
   listBooks.querySelectorAll('button').forEach((element) => {
     element.addEventListener('click', () => books.removeBooks(element));
   });

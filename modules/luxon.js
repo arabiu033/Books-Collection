@@ -513,7 +513,7 @@ const ianaRegex =
  * @private
  */
 
-const monthsLong = [
+export const monthsLong = [
   "January",
   "February",
   "March",
