@@ -37,7 +37,7 @@ export class BookHandling {
 
   updateBtns() {
     listBooks.querySelectorAll('button').forEach((element) => {
-      element.addEventListener('click', () => books.removeBooks(element));
+      element.addEventListener('click', () => this.removeBooks(element));
     });
   }
 

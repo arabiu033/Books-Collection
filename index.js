@@ -1,8 +1,16 @@
 import {
-  listBooks, books, bookAuthor, bookTitle, addBtn,
+  bookAuthor, bookTitle, addBtn,
 } from './modules/variables.js';
 import './modules/interface.js';
 import './modules/date.js';
+import { BookHandling } from './modules/operations.js';
+
+let books;
+if (localStorage.getItem('collectionOfBooks')) {
+  books = new BookHandling(JSON.parse(localStorage.getItem('collectionOfBooks') || '[]'));
+} else {
+  books = new BookHandling([]);
+}
 
 addBtn.addEventListener('click', () => {
   books.setBookCount();

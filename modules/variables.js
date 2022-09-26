@@ -1,5 +1,3 @@
-import { BookHandling } from './operations.js';
-
 export const bookTitle = document.getElementById('book-title');
 export const bookAuthor = document.getElementById('book-author');
 export const addBtn = document.getElementById('submit-btn');
@@ -11,12 +9,3 @@ export const sectionOne = document.getElementById('action-1');
 export const sectionTwo = document.getElementById('action-2');
 export const sectionThree = document.getElementById('action-3');
 export const date = document.querySelector('.add-date');
-let books;
-
-if (localStorage.getItem('collectionOfBooks')) {
-  books = new BookHandling(JSON.parse(localStorage.getItem('collectionOfBooks') || '[]'));
-} else {
-  books = new BookHandling([]);
-}
-
-export { books };
