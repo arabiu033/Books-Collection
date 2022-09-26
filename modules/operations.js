@@ -1,4 +1,5 @@
 // Handle the operations required on a book
+/* eslint-disable import/prefer-default-export */
 import { listBooks } from './variables.js';
 
 export class BookHandling {

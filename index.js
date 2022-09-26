@@ -1,8 +1,8 @@
 import {
   bookAuthor, bookTitle, addBtn,
 } from './modules/variables.js';
-import './modules/interface.js';
 import './modules/date.js';
+import './modules/interface.js';
 import { BookHandling } from './modules/operations.js';
 
 let books;

@@ -1,3 +1,4 @@
+// All varables declared
 export const bookTitle = document.getElementById('book-title');
 export const bookAuthor = document.getElementById('book-author');
 export const addBtn = document.getElementById('submit-btn');

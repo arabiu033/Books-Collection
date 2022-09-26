@@ -1,4 +1,4 @@
-// Handle the opeartion of changing the interface of the page base on the user action
+// Handle the opeartion of changing the interface of the page base on the user actions
 import {
   list, add, contact, sectionOne, sectionTwo, sectionThree,
 } from './variables.js';
